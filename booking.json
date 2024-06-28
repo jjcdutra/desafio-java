@@ -1,0 +1,14 @@
+//Certifique-se de que o PostgreSQL está em execução e que o banco de dados hotel_db foi criado. Em seguida, execute a aplicação Spring Boot. Agora, você pode testar a API de reserva de quartos acessando a URL:
+
+//Para pesquisar hotéis: http://localhost:8080/search?destination=Paris&rooms=1&guests=1
+//Para obter avaliações de um hotel específico: http://localhost:8080/reviews?hotelId=1
+//Para criar uma reserva: http://localhost:8080/reserve?hotelId=1 com o corpo da requisição:
+
+{
+  "guestName": "John Doe",
+  "contact": "john@example.com",
+  "paymentDetails": "1234-5678-9012-3456",
+  "checkInDate": "2023-10-01",
+  "checkOutDate": "2023-10-05",
+  "numberOfRooms": 2
+}
